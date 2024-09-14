@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./main.js"></script>
+    <style>
+
+    </style>
+</head>
+<body>
+    <canvas style="border: 1px solid black;" id="can"></canvas>
+    <script>
+        const can = document.getElementById('can');
+        can.width = 500;
+        can.height = 500;
+        const ctx = can.getContext('2d');
+        const pixel = new Pixel(ctx);
+        //console.log(pixel);
+        //pixel.markCenter();
+        //pixel.drawCircle(100, 100, 50);
+        //pixel.drawRegularPolygon(300, 300, 70, 6, 'blue', 2, '');
+        //pixel.drawStar(300, 300, 70, 35, 18, 'blue', 2, '');
+        //pixel.drawHeart(300, 300, 80);
+        pixel.drawText('Hello World', 100, 100)
+    </script>
+</body>
+</html>
